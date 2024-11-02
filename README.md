@@ -1,5 +1,3 @@
-Here's a revised version of your README to improve 
-
 # Data Generation Code for PAPER [How Far is Video Generation from World Model: A Physical Law Perspective]()
 
 
