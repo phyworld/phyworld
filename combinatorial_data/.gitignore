@@ -1,0 +1,54 @@
+# General exluded files
+*.o
+__pycache__
+.DS_Store
+.ropeproject
+.nfs*
+.vscode
+
+# Excluded paths
+build
+cmake_build
+src/python/phyre.egg-info/
+
+# Saved solutions
+data/solutions
+
+# Compiled simulator bindings.
+src/python/phyre/simulator_bindings.*
+
+# Downloadable thirt-party thrift.js library.
+src/viz/public/thrift.js
+
+# Generated files
+src/gen-cpp
+src/gen-js
+src/gen-py
+last_user_input.txt
+*.so
+.pytype
+.mypy_cache
+website/i18n/
+website/node_modules/
+website/yarn.lock
+
+data_debug/
+*.hdf5
+*.mp4
+*.gif
+examples/*.png
+phyre_data_100/
+phyre_data_1000/
+examples/vis
+examples/visv2
+eval_results
+*.bin
+*.bin.lzma
+*.zip
+*.pt
+*.csv
+*.json
+*.pkl
+*.pdf
+*.jpg
+main.sh

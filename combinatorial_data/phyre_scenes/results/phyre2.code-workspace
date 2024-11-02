@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../bykang/ckpts/phyworld"
+		},
+		{
+			"path": "../../../../bykang/phy-data"
+		}
+	],
+	"settings": {}
+}

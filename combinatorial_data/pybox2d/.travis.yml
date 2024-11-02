@@ -1,0 +1,61 @@
+# vi: sw=2 ts=2 sts=2 expandtab
+sudo: false
+language: generic
+
+stages:
+  - test
+
+jobs:
+  include:
+  - stage: test
+    name: Linux/Python 3.5
+    env: PYTHON_VER=3.5
+    os: linux
+  - name: Linux/Python 3.6
+    env: PYTHON_VER=3.6
+    os: linux
+  - name: Linux/Python 3.7
+    env: PYTHON_VER=3.7
+    os: linux
+  - name: Linux/Python 3.8
+    env: PYTHON_VER=3.8
+    os: linux
+
+  - name: OSX/Python 3.5
+    env: PYTHON_VER=3.5
+    os: osx
+  - name: OSX/Python 3.6
+    env: PYTHON_VER=3.6
+    os: osx
+  - name: OSX/Python 3.7
+    env: PYTHON_VER=3.7
+    os: osx
+  - name: OSX/Python 3.8
+    env: PYTHON_VER=3.8
+    os: osx
+
+before_install:
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then wget https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -O miniconda.sh; fi
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh; fi
+  - bash miniconda.sh -b -p $HOME/miniconda
+  - source "$HOME/miniconda/etc/profile.d/conda.sh"
+  - hash -r
+  - conda config --set always_yes yes --set changeps1 no
+  - conda config --remove channels defaults
+  - conda config --add channels 'conda-forge'
+
+install:
+  - conda create -q -n test-environment python=$PYTHON_VER swig pytest coverage coveralls
+  - conda activate test-environment
+
+  - python setup.py build
+  - pip install .
+
+script: 
+  - python -c "import Box2D"
+  - python -c "import Box2D.examples"
+
+  - pytest -vv --pyargs Box2D.tests
+
+after_success:
+  - coveralls
