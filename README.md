@@ -73,6 +73,12 @@ To generate evaluation data from 10 reserved templates:
 python3 data_generator_v2.py --num_workers 64 --run_id 6 --data_dir ./eval
 ```
 
+
+## TODO
+
+- Data generation code for in-depth analysis
+- Develop evaluation code to parse velocity and calculate error metrics from video data
+
 ## Notes
 
 The code has been reorganized, which may lead to errors or deviations from the original research results. If you encounter any issues, please report them by opening an issue. We will address any bugs promptly.
