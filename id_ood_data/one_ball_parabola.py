@@ -599,6 +599,3 @@ if __name__=='__main__':
 
 # python3  one_ball_parabola.py  --data_for_vis
 # sudo /mnt/bn/magic/yueyang/miniconda3/envs/phyre/bin/python3  one_ball_parabola.py  --data_for_vis --data_name right
-# sudo /mnt/bn/magic/yueyang/miniconda3/envs/phyre/bin/python3 one_ball_parabola.py --data_name in_dist_v2 --data_size_level 0 --num_workers 64
-# sudo /mnt/bn/magic/yueyang/miniconda3/envs/phyre/bin/python3 one_ball_parabola.py --data_name in_dist_v2 --data_size_level 1 --num_workers 64
-# sudo /mnt/bn/magic/yueyang/miniconda3/envs/phyre/bin/python3 one_ball_parabola.py --data_name in_dist_v2 --data_size_level 2 --num_workers 64

@@ -668,4 +668,4 @@ if __name__=='__main__':
     merge_files(args.data_dir)
 
 
-# sudo /mnt/bn/magic/yueyang/miniconda3/envs/phyre/bin/python3 two_balls_collision.py  --data_for_vis
+# 
