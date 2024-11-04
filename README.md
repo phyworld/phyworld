@@ -100,7 +100,7 @@ The code has been reorganized, which may lead to errors or deviations from the o
 ```
 @article{kang2024how,
   title={How Far is Video Generation from World Model? -- A Physical Law Perspective},
-  author={Kang, Bingyi and Yue, Yang and Wang, Kaixin and Lin, Zhijie and Zhao, Yang, and Lu Rui and Gao, Huang and Feng Jiashi},
+  author={Kang, Bingyi and Yue, Yang and Lu, Rui and Lin, Zhijie and Zhao, Yang, and Wang, Kaixin and Gao, Huang and Feng Jiashi},
   journal={arXiv preprint arXiv:2406.16860},
   year={2024}
 }
