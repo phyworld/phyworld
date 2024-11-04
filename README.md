@@ -1,4 +1,4 @@
-# Data Generation Code for PAPER [How Far is Video Generation from World Model: A Physical Law Perspective]()
+# Data Generation Code for PAPER [How Far is Video Generation from World Model: A Physical Law Perspective](https://phyworld.github.io/)
 
 
 ## In-Distribution and Out-of-Distribution Data
@@ -73,11 +73,21 @@ To generate evaluation data from 10 reserved templates:
 python3 data_generator_v2.py --num_workers 64 --run_id 6 --data_dir ./eval
 ```
 
-
 ## TODO
 
 - Data generation code for in-depth analysis
 - Develop evaluation code to parse velocity and calculate error metrics from video data
+
+Here's a formatted table for the README under the "Data" section:
+
+## Download Data
+
+| Data Type            | Train Data (30K/300K/3M)                                                                                                                  | Eval Data                                                                                                                | Description                                                                                                 |
+|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| **Uniform Motion**   | [30K](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/uniform_motion_30K.hdf5), [300K](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/uniform_motion_300K.hdf5), [3M](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/uniform_motion_3M.hdf5) | [Eval](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/uniform_motion_eval.hdf5)                    | Eval data includes both in-distribution and out-of-distribution data                                        |
+| **Parabola**         | [30K](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/parabola_30K.hdf5), [300K](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/parabola_300K.hdf5), [3M](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/parabola_3M.hdf5) | [Eval](https://huggingface.co/datasets/magicr/phyworld/blob/main/id_ood_data/parabola_eval.hdf5)                          | Eval data includes both in-distribution and out-of-distribution data                                        |
+| **Collision**        | To upload                                                                                                                                 | -                                                                                                                        | -                                                                                                           |
+| **Combinatorial Data** | [In-template 6M](to upload)                                                                                                               | [Out-of-template](https://huggingface.co/datasets/magicr/phyworld/blob/main/combinatorial_data/combinatorial_out_of_template_eval_1K.hdf5) | In-template-6M includes train data and in-template eval data. Out-template refers to eval data from reserved 10 templates. |
 
 ## Notes
 
@@ -88,4 +98,10 @@ The code has been reorganized, which may lead to errors or deviations from the o
 ## Citation
 
 ```
+@article{kang2024how,
+  title={How Far is Video Generation from World Model? -- A Physical Law Perspective},
+  author={Kang, Bingyi and Yue, Yang and Wang, Kaixin and Lin, Zhijie and Zhao, Yang, and Lu Rui and Gao, Huang and Feng Jiashi},
+  journal={arXiv preprint arXiv:2406.16860},
+  year={2024}
+}
 ```
