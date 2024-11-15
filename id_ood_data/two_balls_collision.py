@@ -357,16 +357,30 @@ def in_dist_generate():
     # training or in-distribution eval
     print(f"args.data_name: {args.data_name}")
 
+    # if 'eval' not in args.data_name and 'vis' not in args.data_name:
+    #     if args.data_size_level == 1:
+    #         V_SPACE= 16
+    #         R_SAPCE= 6
+    #     elif args.data_size_level == 2:
+    #         V_SPACE= 31
+    #         R_SAPCE= 11
+    #     elif args.data_size_level == 3:
+    #         V_SPACE= 61
+    #         R_SAPCE= 21
+    #     elif args.data_size_level == 4:
+    #         V_SPACE= 121
+    #         R_SAPCE= 41
+
     if 'eval' not in args.data_name and 'vis' not in args.data_name:
         if args.data_size_level == 1:
-            V_SPACE= 16
-            R_SAPCE= 6
+            V_SPACE= 21
+            R_SAPCE= 8
         elif args.data_size_level == 2:
-            V_SPACE= 31
-            R_SAPCE= 11
+            V_SPACE= 41
+            R_SAPCE= 14
         elif args.data_size_level == 3:
-            V_SPACE= 61
-            R_SAPCE= 21
+            V_SPACE= 71
+            R_SAPCE= 26
         elif args.data_size_level == 4:
             V_SPACE= 121
             R_SAPCE= 41
@@ -388,7 +402,7 @@ def in_dist_generate():
     # List to hold all combinations
     combinations = generate_combinations(r_list, r_list, v_list, v_list)
 
-    return combination
+    return combinations
 
 
 def out_dist_generate():
@@ -619,7 +633,7 @@ if __name__=='__main__':
 
     if args.data_for_vis:
         args.data_name = 'vis_data_L'
-        args.data_dir = pathlib.Path(f'/mnt/bn/magic/simple_scenes_data/collision') / args.data_name
+        args.data_dir = pathlib.Path(f'/mnt/bn/bykang/phy-data/simple_scenes_data/collision') / args.data_name
         if not os.path.exists(args.data_dir):
             os.mkdir(args.data_dir)
         combination_list = [in_dist_generate()]
@@ -636,7 +650,8 @@ if __name__=='__main__':
     elif 'eval' not in args.data_name or 'in_dist' in args.data_name:
         combinations = in_dist_generate()
         size = get_size_str(len(combinations))
-        args.data_dir = pathlib.Path(f'/mnt/bn/magic/simple_scenes_data/collision_{size}_{args.data_name}')
+        args.data_dir = pathlib.Path(f'/mnt/bn/bykang/phy-data/simple_scenes_data/collision/data_{size}_{args.data_name}')
+        print(args.data_dir)
         if not os.path.exists(args.data_dir):
             os.mkdir(args.data_dir)
         if args.num_workers == 1:
@@ -668,4 +683,4 @@ if __name__=='__main__':
     merge_files(args.data_dir)
 
 
-# 
+# sudo /mnt/bn/magic/yueyang/miniconda3/envs/phyre/bin/python3 two_balls_collision.py  --data_for_vis
