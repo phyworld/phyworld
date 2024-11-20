@@ -42,12 +42,11 @@ phyre_data_1000/
 examples/vis
 examples/visv2
 eval_results
-# *.bin
-# *.bin.lzma
+
 *.zip
 *.pt
-*.csv
-*.json
+# *.csv
+phyre_scenes/results
 *.pkl
 *.pdf
 *.jpg
