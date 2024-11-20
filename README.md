@@ -1,5 +1,20 @@
-# Data Generation Code for PAPER [How Far is Video Generation from World Model: A Physical Law Perspective](https://phyworld.github.io/)
+<div align="center">
+<h1>How Far is Video Generation from World Model: A Physical Law Perspective</h1>
 
+[**Bingyi Kang**](https://bingykang.github.io/)<sup>\*</sup>   ·  [**Yang Yue**](https://yueyang130.github.io/)<sup>\*</sup> 
+<br>
+[**Rui Lu**](https://lr32768.github.io/) · [**Zhijie Lin**](https://scholar.google.com/citations?user=xXMj6_EAAAAJ&hl=zh-CN) · [**Yang Zhao**](https://scholar.google.com/citations?user=uPmTOHAAAAAJ&hl=en) · [**Kaixin Wang**](https://kaixin96.github.io/) · [**Gao Huang**](https://www.gaohuang.net/) · [**Jiashi Feng**](https://sites.google.com/site/jshfeng/)
+<br>
+*Equal Contribution, in alphabetical order
+
+<a href="https://arxiv.org/abs/2411.02385"><img src='https://img.shields.io/badge/arXiv-phyworld-red' alt='Paper PDF'></a>
+<a href='https://phyworld.github.io/'><img src='https://img.shields.io/badge/Project_Page-phyworld-green' alt='Project Page'></a>
+<a href='https://huggingface.co/datasets/magicr/phyworld'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-phyworld-blue'></a>
+</div>
+
+We conduct a systematic study to investigate whether video generation is able to learn physical laws from videos, leveraging data and model scaling.
+
+<iframe width="1056" height="643" src="https://www.youtube.com/embed/yWSn9Xyrkso" title="Is SORA really a world model?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## In-Distribution and Out-of-Distribution Data
 
