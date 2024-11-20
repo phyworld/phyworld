@@ -14,7 +14,8 @@
 
 We conduct a systematic study to investigate whether video generation is able to learn physical laws from videos, leveraging data and model scaling.
 
-<iframe width="1056" height="643" src="https://www.youtube.com/embed/yWSn9Xyrkso" title="Is SORA really a world model?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+![Alt Text](./assets/teaser2x.gif)
+
 
 ## In-Distribution and Out-of-Distribution Data
 
