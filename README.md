@@ -50,7 +50,7 @@ python3 one_ball_parabola.py --data_for_vis
 
 ## Combinatorial Data
 
-We build combinatorial data generation on the [Phyre](https://github.com/facebookresearch/phyre/tree/main) codebase. Follow the installation instructions in the Phyre repository to set up the `combinatorial_data` directory.
+We build combinatorial data generation on the [Phyre](https://github.com/facebookresearch/phyre/tree/main) codebase. Follow the installation instructions in the Phyre repository to set up the `combinatorial_data` directory. We put our 70 templates 10000:10069 [here](https://github.com/phyworld/phyworld/tree/master/combinatorial_data/data/task_scripts/main) and complied bins [here](https://github.com/phyworld/phyworld/tree/master/combinatorial_data/data/generated_tasks). We put a conda env yaml for combination data generation in the file `phyre_environment.yml`.
 
 ### Training Data Generation from 60 Templates
 
