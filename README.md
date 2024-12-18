@@ -5,7 +5,7 @@
 <br>
 [**Rui Lu**](https://lr32768.github.io/) · [**Zhijie Lin**](https://scholar.google.com/citations?user=xXMj6_EAAAAJ&hl=zh-CN) · [**Yang Zhao**](https://scholar.google.com/citations?user=uPmTOHAAAAAJ&hl=en) · [**Kaixin Wang**](https://kaixin96.github.io/) · [**Gao Huang**](https://www.gaohuang.net/) · [**Jiashi Feng**](https://sites.google.com/site/jshfeng/)
 <br>
-*Equal Contribution, in alphabetical order
+***Equal Contribution, in alphabetical order**
 
 <a href="https://arxiv.org/abs/2411.02385"><img src='https://img.shields.io/badge/arXiv-phyworld-red' alt='Paper PDF'></a>
 <a href='https://phyworld.github.io/'><img src='https://img.shields.io/badge/Project_Page-phyworld-green' alt='Project Page'></a>
@@ -113,6 +113,7 @@ Evaluation code to parse velocity and calculate error metrics from video data se
 ## TODO
 
 - Data generation code for in-depth analysis
+- Model Training code
 
 
 ## Download Data
@@ -133,7 +134,7 @@ The code has been reorganized, which may lead to errors or deviations from the o
 ## Citation
 
 ```
-@article{kang2024how,
+@article{phyworld,
   title={How Far is Video Generation from World Model? -- A Physical Law Perspective},
   author={Kang, Bingyi and Yue, Yang and Lu, Rui and Lin, Zhijie and Zhao, Yang, and Wang, Kaixin and Gao, Huang and Feng Jiashi},
   journal={arXiv preprint arXiv:2406.16860},
