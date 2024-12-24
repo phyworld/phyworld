@@ -1,7 +1,7 @@
 <div align="center">
 <h1>How Far is Video Generation from World Model: A Physical Law Perspective</h1>
 
-[**Bingyi Kang**](https://bingykang.github.io/)<sup>\*</sup>   ·  [**Yang Yue**](https://yueyang130.github.io/)<sup>\*</sup> 
+[**Bingyi Kang**](https://bingykang.github.io/)\*   ·  [**Yang Yue**](https://yueyang130.github.io/)\*
 <br>
 [**Rui Lu**](https://lr32768.github.io/) · [**Zhijie Lin**](https://scholar.google.com/citations?user=xXMj6_EAAAAJ&hl=zh-CN) · [**Yang Zhao**](https://scholar.google.com/citations?user=uPmTOHAAAAAJ&hl=en) · [**Kaixin Wang**](https://kaixin96.github.io/) · [**Gao Huang**](https://www.gaohuang.net/) · [**Jiashi Feng**](https://sites.google.com/site/jshfeng/)
 <br>
